@@ -7,7 +7,8 @@
 
 ## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/1619dd5b-edd0-4344-aa2f-bac2a6281aae)
+![Screenshot 2025-06-03 223228](https://github.com/user-attachments/assets/e0e58a34-c642-47c2-a7de-200d1179fb01)
+
 
 ---
 
