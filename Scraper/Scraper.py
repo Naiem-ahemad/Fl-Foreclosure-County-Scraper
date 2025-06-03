@@ -1,5 +1,6 @@
 import os
 import time
+import pytz
 import subprocess
 import contextlib
 import pandas as pd
@@ -12,8 +13,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Setup date
+real_date = pytz.timezone('Asia/Kolkata')
+ist = datetime.now(pytz.timezone('Asia/Kolkata')).replace(day=1) - timedelta(days=1)
+now_ist = datetime.now(real_date)
+target_date_str = ist.strftime("%m-%d-%Y")
 yesterday = datetime.now() - timedelta(days=1)
-AUCTION_DATE = yesterday.strftime("%m/%d/%Y")
+if now_ist.day == 1:
+    AUCTION_DATE = target_date_str
+else:
+    AUCTION_DATE = yesterday.strftime("%m/%d/%Y")
 FOLDER_NAME = AUCTION_DATE.replace("/", "-")
 os.makedirs(FOLDER_NAME, exist_ok=True)
 

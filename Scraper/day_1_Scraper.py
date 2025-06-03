@@ -36,7 +36,7 @@ def check_auction_day1(base_url, driver):
     # Calculate first day of previous month
     first_of_this_month = now_ist.replace(day=1)
     previous_month_last_day = first_of_this_month - timedelta(days=1)
-    target_date = previous_month_last_day.replace(day=1)  # e.g. 2025-03-01
+    target_date = previous_month_last_day.replace(day=1)
 
     # Format date for URL: YYYY-MM-DD
     target_date_str = target_date.strftime("%Y-%m-%d")
@@ -100,8 +100,9 @@ def main():
 
     driver.quit()
 
-    prev_month_first_day = datetime.now(pytz.timezone('Asia/Kolkata')) - timedelta(days=1)
-    filename = prev_month_first_day.strftime("availability_of_%m-%d-%Y") + ".xlsx"
+    ist = datetime.now(pytz.timezone('Asia/Kolkata')).replace(day=1) - timedelta(days=1)
+    target_date_str = ist.strftime("%m-%d-%Y")
+    filename = f"availability_of_{target_date_str}" + ".xlsx"
     df = pd.DataFrame(results)
     df.to_excel(filename, index=False)
     print(f"✅ Results saved to {filename}")
