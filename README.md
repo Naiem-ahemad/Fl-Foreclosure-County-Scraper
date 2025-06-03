@@ -21,12 +21,12 @@
 - 🌐 **VPN Location Check with Retry Countdown**
 - 📊 **Live Terminal Output Embedded in GUI**
 - 🔒 **Selenium Webdriver integration**
-- Chrome Browser Needed
 - ❌ No GPU required – fully optimized for CPU-only PCs
 
 ---
 
 ## 📦 Installation
+- 📦 Chrome Browser Needed
 
 ### 🖥️ Windows (EXE)
 1. Download the latest `.exe` file from the [Releases](https://github.com/Naiem-ahemad/Fl-Foreclosure-County-Scraper/releases/tag/v1.0) section.
