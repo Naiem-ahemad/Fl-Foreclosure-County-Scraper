@@ -18,10 +18,10 @@
 - 🔍 **Multi-County Foreclosure Scraping**
 - 🚀 **High-Speed Scraping** with multithreading
 - 🧠 **Smart Filters & De-duplication**
-- 🎨 **ASCII Art UI with Typing Animation**
 - 🌐 **VPN Location Check with Retry Countdown**
 - 📊 **Live Terminal Output Embedded in GUI**
-- 🔒 **Selenium Webdriver (headless browser) integration**
+- 🔒 **Selenium Webdriver integration**
+- Chrome Browser Needed
 - ❌ No GPU required – fully optimized for CPU-only PCs
 
 ---
